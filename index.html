@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="components/icon-preview.css" />
     <link rel="icon" sizes="16x16" href="src/yellow.png" />
     <style>
+      :root {
+        scrollbar-color: var(--color-fg) var(--color-bg);
+      }
+
       body {
         font-size: 24px;
         font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
@@ -37,14 +41,14 @@
         color: var(--color-link);
       }
 
-      body {
+      :root {
         --color-bg: #ffffff;
         --color-fg: #222034;
         --color-link: #306082;
       }
 
       @media (prefers-color-scheme: dark) {
-        body {
+        :root {
           --color-bg: #222034;
           --color-fg: #ffffff;
           --color-link: #5fcde4;
