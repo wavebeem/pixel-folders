@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Folders</title>
+    <script type="module" src="components/icon-preview.js"></script>
+    <link rel="stylesheet" href="components/icon-preview.css" />
+    <link rel="icon" sizes="16x16" href="src/yellow.png" />
+    <style>
+      body {
+        font-size: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+          "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+          sans-serif;
+        background: var(--color-bg);
+        color: var(--color-fg);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.5;
+      }
+
+      code {
+        font-family: "JetBrains Mono", "Input", "Fira Code", "Menlo", "Consolas",
+          monospace;
+      }
+
+      h2 {
+        border-top: 1px dotted;
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        font-size: 1.1em;
+      }
+
+      [href] {
+        color: var(--color-link);
+      }
+
+      body {
+        --color-bg: #ffffff;
+        --color-fg: #222034;
+        --color-link: #306082;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          --color-bg: #222034;
+          --color-fg: #ffffff;
+          --color-link: #5fcde4;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pixel Folders</h1>
+    <p>
+      <a href="dist/pixel-folders.zip">Download the zip</a> and read the
+      instructions in <code>README.txt</code> inside it. Compatible with Windows
+      and Mac.
+    </p>
+    <p>
+      <a href="https://github.com/wavebeem/pixel-folders/">Source available</a>
+      on GitHub. All icons made using
+      <a href="https://www.aseprite.org/">Aseprite</a> and the
+      <a href="https://lospec.com/palette-list/dawnbringer-32"
+        >DB32 color palette</a
+      >.
+    </p>
+
+    <h2>16px</h2>
+    <icon-preview size="16"></icon-preview>
+
+    <h2>32px</h2>
+    <icon-preview size="32"></icon-preview>
+
+    <h2>48px</h2>
+    <icon-preview size="48"></icon-preview>
+
+    <h2>64px</h2>
+    <icon-preview size="64"></icon-preview>
+
+    <h2>128px</h2>
+    <icon-preview size="128"></icon-preview>
+
+    <h2>256px</h2>
+    <icon-preview size="256"></icon-preview>
+
+    <footer>
+      &copy; 2020 <a href="https://www.mockbrian.com">Brian Mock</a>
+    </footer>
+
+    <template id="template-icon-preview">
+      <img src="src/code.png" />
+      <img src="src/downloads.png" />
+      <img src="src/gray.png" />
+      <img src="src/music.png" />
+      <img src="src/pictures.png" />
+      <img src="src/tan.png" />
+      <img src="src/yellow.png" />
+    </template>
+  </body>
+</html>

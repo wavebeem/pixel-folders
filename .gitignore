@@ -1,3 +1,4 @@
+.vscode
 .DS_Store
 
 # In case I accidentally put other files in the `dist` folder, this will only
