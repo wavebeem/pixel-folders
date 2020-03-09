@@ -4,7 +4,6 @@ class IconPreview extends HTMLElement {
       .getElementById("template-icon-preview")
       .content.cloneNode(true);
     const size = Number(this.getAttribute("size") || 16);
-    console.log("Whatup", size);
     this.innerHTML = "";
     for (const img of content.querySelectorAll("img")) {
       img.width = size;
