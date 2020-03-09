@@ -5,3 +5,4 @@
 # allow the one specific zip file to get committed to git
 dist/*
 !dist/pixel-folders.zip
+!dist/png

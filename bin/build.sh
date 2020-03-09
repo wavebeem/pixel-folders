@@ -11,6 +11,8 @@ Main() {
     for size in 16 32 48 64 128 256; do
       echo -n "."
       convert "$file" -scale "$size" "icon_${size}x${size}.png"
+      mkdir -p "png/$size"
+      cp "icon_${size}x${size}.png" "png/${size}/${name}.png"
     done
     echo -n "."
     convert *.png icon.ico
@@ -31,7 +33,7 @@ Main() {
     > README.txt
   echo
   zip -r pixel-folders.zip *
-  mv pixel-folders.zip ../dist
+  mv * ../dist
   echo
   cd ..
   rm -rf build

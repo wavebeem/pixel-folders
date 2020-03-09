@@ -6,7 +6,8 @@
     <title>Pixel Folders</title>
     <script type="module" src="components/icon-preview.js"></script>
     <link rel="stylesheet" href="components/icon-preview.css" />
-    <link rel="icon" sizes="16x16" href="src/yellow.png" />
+    <link rel="icon" sizes="16x16" href="dist/png/16/yellow.png" />
+    <link rel="icon" sizes="32x32" href="dist/png/32/yellow.png" />
     <style>
       :root {
         scrollbar-color: var(--color-fg) var(--color-bg);
@@ -31,7 +32,7 @@
       }
 
       h2 {
-        border-top: 1px dotted;
+        border-top: 1px solid var(--color-border);
         padding-top: 0.5em;
         margin-bottom: 0;
         font-size: 1.1em;
@@ -44,6 +45,7 @@
       :root {
         --color-bg: #ffffff;
         --color-fg: #222034;
+        --color-border: rgba(0, 0, 0, 0.1);
         --color-link: #306082;
       }
 
@@ -51,6 +53,7 @@
         :root {
           --color-bg: #222034;
           --color-fg: #ffffff;
+          --color-border: rgba(255, 255, 255, 0.25);
           --color-link: #5fcde4;
         }
       }
@@ -58,11 +61,13 @@
   </head>
   <body>
     <h1>Pixel Folders</h1>
+
     <p>
       <a href="dist/pixel-folders.zip">Download the zip</a> and read the
       instructions in <code>README.txt</code> inside it. Compatible with Windows
       and Mac.
     </p>
+
     <p>
       <a href="https://github.com/wavebeem/pixel-folders/">Source available</a>
       on GitHub. All icons made using
@@ -95,13 +100,13 @@
     </footer>
 
     <template id="template-icon-preview">
-      <img src="src/code.png" />
-      <img src="src/downloads.png" />
-      <img src="src/gray.png" />
-      <img src="src/music.png" />
-      <img src="src/pictures.png" />
-      <img src="src/tan.png" />
-      <img src="src/yellow.png" />
+      <img data-icon-name="code" />
+      <img data-icon-name="downloads" />
+      <img data-icon-name="gray" />
+      <img data-icon-name="music" />
+      <img data-icon-name="pictures" />
+      <img data-icon-name="tan" />
+      <img data-icon-name="yellow" />
     </template>
   </body>
 </html>
