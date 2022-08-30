@@ -1,6 +1,7 @@
 icon-preview {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 icon-preview > img {
