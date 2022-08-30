@@ -4,109 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel Folders</title>
-    <script type="module" src="components/icon-preview.js"></script>
-    <link rel="stylesheet" href="components/icon-preview.css" />
-    <link rel="icon" sizes="16x16" href="dist/png/16/yellow.png" />
-    <link rel="icon" sizes="32x32" href="dist/png/32/yellow.png" />
-    <style>
-      :root {
-        scrollbar-color: var(--color-fg) var(--color-bg);
-      }
-
-      body {
-        font-size: 24px;
-        font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
-          "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
-          sans-serif;
-        background: var(--color-bg);
-        color: var(--color-fg);
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        line-height: 1.5;
-      }
-
-      code {
-        font-family: "JetBrains Mono", "Input", "Fira Code", "Menlo", "Consolas",
-          monospace;
-      }
-
-      h2 {
-        border-top: 1px solid var(--color-border);
-        padding-top: 0.5em;
-        margin-bottom: 0;
-        font-size: 1.1em;
-      }
-
-      [href] {
-        color: var(--color-link);
-      }
-
-      :root {
-        --color-bg: #ffffff;
-        --color-fg: #222034;
-        --color-border: rgba(0, 0, 0, 0.1);
-        --color-link: #306082;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --color-bg: #222034;
-          --color-fg: #ffffff;
-          --color-border: rgba(255, 255, 255, 0.25);
-          --color-link: #5fcde4;
-        }
-      }
-    </style>
+    <link rel="icon" sizes="16x16" href="/dist/png/16/folder.png" />
+    <link rel="icon" sizes="32x32" href="/dist/png/32/folder.png" />
+    <script type="module" src="main.js"></script>
+    <script
+      defer
+      data-domain="pixel-folders.wavebeem.com"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Pixel Folders</h1>
+    <main>
+      <h1>Pixel Folders</h1>
 
-    <p>
-      <a href="dist/pixel-folders.zip">Download the zip</a> and read the
-      instructions in <code>README.txt</code> inside it. Compatible with Windows
-      and Mac.
-    </p>
+      <p>
+        <a href="dist/pixel-folders.zip">Download the zip</a> and read the
+        instructions in <code>README.txt</code>. Includes Windows
+        <code>.ico</code>, Mac <code>.icns</code>, and <code>.png</code> icons.
+      </p>
 
-    <p>
-      <a href="https://github.com/wavebeem/pixel-folders/">Source available</a>
-      on GitHub. All icons made using
-      <a href="https://www.aseprite.org/">Aseprite</a> and the
-      <a href="https://lospec.com/palette-list/dawnbringer-32"
-        >DB32 color palette</a
-      >.
-    </p>
+      <p>
+        <a href="https://github.com/wavebeem/pixel-folders/"
+          >Source available</a
+        >
+        on GitHub. All icons made using
+        <a href="https://www.aseprite.org/">Aseprite</a> and the
+        <a href="https://lospec.com/palette-list/aap-64">AAP-64</a> color
+        palette. Available in 16, 32, 64, 128, and 256 pixels.
+      </p>
 
-    <h2>16px</h2>
-    <icon-preview size="16"></icon-preview>
-
-    <h2>32px</h2>
-    <icon-preview size="32"></icon-preview>
-
-    <h2>48px</h2>
-    <icon-preview size="48"></icon-preview>
-
-    <h2>64px</h2>
-    <icon-preview size="64"></icon-preview>
-
-    <h2>128px</h2>
-    <icon-preview size="128"></icon-preview>
-
-    <h2>256px</h2>
-    <icon-preview size="256"></icon-preview>
+      <hr />
+      <icon-preview data-size="16"></icon-preview>
+      <hr />
+      <icon-preview data-size="32"></icon-preview>
+      <hr />
+      <icon-preview data-size="48"></icon-preview>
+      <hr />
+      <icon-preview data-size="64"></icon-preview>
+      <hr />
+    </main>
 
     <footer>
-      &copy; 2020 <a href="https://www.mockbrian.com">Brian Mock</a>
+      &copy; 2022 <a href="https://www.wavebeem.com">Brian Mock</a>
     </footer>
 
     <template id="template-icon-preview">
       <img data-icon-name="code" />
       <img data-icon-name="downloads" />
-      <img data-icon-name="gray" />
       <img data-icon-name="music" />
       <img data-icon-name="pictures" />
-      <img data-icon-name="tan" />
-      <img data-icon-name="yellow" />
+      <img data-icon-name="folder-red" />
+      <img data-icon-name="folder-orange" />
+      <img data-icon-name="folder" />
+      <img data-icon-name="folder-green" />
+      <img data-icon-name="folder-teal" />
+      <img data-icon-name="folder-blue" />
     </template>
   </body>
 </html>

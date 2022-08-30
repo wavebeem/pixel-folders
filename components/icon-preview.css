@@ -1,9 +1,0 @@
-icon-preview {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-icon-preview > img {
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
