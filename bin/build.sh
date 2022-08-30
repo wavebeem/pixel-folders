@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-Main() {
+:main() {
   rm -rf build dist
   mkdir -p build/{mac,windows} dist
   cd build
@@ -41,4 +41,4 @@ Main() {
   rm -rf build
 }
 
-Main
+:main
