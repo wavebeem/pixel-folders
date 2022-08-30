@@ -29,8 +29,8 @@ set -eu
   year="$(date "+%Y")"
   cp ../LICENSE.txt .
   sed \
-    -e "s/{year}/$year/g" \
-    -e "s/{date}/$date/g" \
+    -e "s/{YEAR}/$year/g" \
+    -e "s/{DATE}/$date/g" \
     ../src/README-template.txt \
     > README.txt
   echo
