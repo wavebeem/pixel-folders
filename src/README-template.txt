@@ -1,7 +1,7 @@
 Pixelated Folders
 =================
 
-https://github.com/wavebeem/pixel-folders
+https://pixel-folders.wavebeem.com
 
 Build Date: {DATE}
 
@@ -24,4 +24,4 @@ See LICENSE.txt for license information.
 
 Copyright {YEAR} Brian Mock
 
-https://www.mockbrian.com/
+https://www.wavebeem.com
